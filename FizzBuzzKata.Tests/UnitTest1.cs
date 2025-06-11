@@ -12,8 +12,25 @@ public class UnitTest1
     /// Man-Oz
     /// Bran
     [Fact]
-    public void Fubu()
+    public void FizzBuzzNegativeTest()
     {
-        
+        // Arrange
+        Random random = new Random();
+        var number = random.Next(1000);
+
+        // Act
+        var result = FizzBuzzKata.FizzBuzz(number);
+
+        // Assert
+        Assert.NotNull(result);
+    }
+}
+
+
+public static class FizzBuzzKata {
+
+    public static string FizzBuzz(int input)
+    {
+        return string.Empty;
     }
 }
